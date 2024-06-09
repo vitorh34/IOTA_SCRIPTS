@@ -1,0 +1,489 @@
+{
+    "refresh": {
+      "rate": "1m",
+      "ms": 60000
+    },
+    "grid": {
+      "cellHeight": 100,
+      "margin": 5,
+      "handle": ".widget-card-header",
+      "draggable": {
+        "handle": ".widget-card-header"
+      },
+      "children": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 3,
+          "id": 3,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "w": 3,
+          "h": 3,
+          "id": 4,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "w": 3,
+          "h": 1,
+          "id": 5,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 9,
+          "y": 0,
+          "w": 3,
+          "h": 3,
+          "id": 7,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "w": 3,
+          "h": 2,
+          "id": 6,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "w": 4,
+          "h": 3,
+          "id": 0,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "w": 4,
+          "h": 3,
+          "id": 1,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "w": 4,
+          "h": 3,
+          "id": 2,
+          "locked": true,
+          "noResize": true,
+          "noMove": true
+        }
+      ]
+    },
+    "time": {
+      "from": "2024-04-18T23:00:00",
+      "to": "2024-04-19T00:00:00",
+      "label": "Custom Range"
+    },
+    "widgets": [
+      {
+        "id": 3,
+        "query": {
+          "id": 3,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.payload_json.t",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "indicator",
+        "layout": {
+          "margin": {
+            "l": 25,
+            "r": 25,
+            "b": 5,
+            "t": 5,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "width": 352.8,
+          "height": 71.25
+        },
+        "options": {
+          "type": "indicator",
+          "mode": "gauge+number",
+          "gauge": {
+            "axis": {
+              "range": [
+                "0",
+                "100"
+              ]
+            }
+          }
+        },
+        "title": "Temperatura [ºC]"
+      },
+      {
+        "id": 4,
+        "query": {
+          "id": 4,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.payload_json.p",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "indicator",
+        "layout": {
+          "margin": {
+            "l": 25,
+            "r": 25,
+            "b": 5,
+            "t": 5,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "width": 352.8,
+          "height": 71.25
+        },
+        "options": {
+          "type": "indicator"
+        },
+        "title": "Pressão [Pa]"
+      },
+      {
+        "id": 5,
+        "query": {
+          "id": 5,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.radio.hardware.rssi",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "indicator",
+        "layout": {
+          "margin": {
+            "l": 25,
+            "r": 25,
+            "b": 5,
+            "t": 5,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "width": 352.8,
+          "height": 71.25
+        },
+        "options": {
+          "type": "indicator"
+        },
+        "title": "Sinal LoRa - RSSI"
+      },
+      {
+        "id": 7,
+        "query": {
+          "id": 7,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.radio.hardware.gps",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "maps",
+        "layout": {},
+        "title": "Localização Antena ATC"
+      },
+      {
+        "id": 6,
+        "query": {
+          "id": 6,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.radio.hardware.snr",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "indicator",
+        "layout": {
+          "margin": {
+            "l": 25,
+            "r": 25,
+            "b": 5,
+            "t": 5,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "width": 352.8,
+          "height": 71.25
+        },
+        "options": {
+          "type": "indicator"
+        },
+        "title": "Sinal LoRa - SNR"
+      },
+      {
+        "id": 0,
+        "query": {
+          "id": 0,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.payload_json.t",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "scatter",
+        "layout": {
+          "margin": {
+            "l": 45,
+            "r": 25,
+            "b": 35,
+            "t": 10,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "xaxis": {
+            "title": {
+              "text": "-"
+            },
+            "range": [
+              "2024-04-18T23:15:56-03:00",
+              "2024-04-18T23:56:35-03:00"
+            ],
+            "type": "date"
+          },
+          "yaxis": {
+            "title": {
+              "text": "-",
+              "font": {
+                "family": "Courier New, monospace",
+                "size": 0,
+                "color": "#FFFFFF"
+              }
+            },
+            "range": [
+              93223.33333333333,
+              93256.66666666667
+            ],
+            "autorange": true,
+            "type": "linear"
+          },
+          "width": 470.4,
+          "height": 213.75
+        },
+        "options": {
+          "type": "scatter"
+        },
+        "title": "Temperatura [ºC]"
+      },
+      {
+        "id": 1,
+        "query": {
+          "id": 1,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.payload_json.p",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "scatter",
+        "layout": {
+          "margin": {
+            "l": 45,
+            "r": 25,
+            "b": 35,
+            "t": 10,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "xaxis": {
+            "title": {
+              "text": "-"
+            },
+            "range": [
+              "2024-04-18T23:15:56-03:00",
+              "2024-04-18T23:56:35-03:00"
+            ],
+            "type": "date"
+          },
+          "yaxis": {
+            "title": {
+              "text": "-",
+              "font": {
+                "family": "Courier New, monospace",
+                "size": 0,
+                "color": "#FFFFFF"
+              }
+            },
+            "range": [
+              93223.33333333333,
+              93256.66666666667
+            ],
+            "autorange": true,
+            "type": "linear"
+          },
+          "width": 470.4,
+          "height": 213.75
+        },
+        "options": {
+          "type": "scatter"
+        },
+        "title": "Pressão [Pa]"
+      },
+      {
+        "id": 2,
+        "query": {
+          "id": 2,
+          "url": "/api/v2/telemetry/",
+          "data": {
+            "deveui": "0005168000132D18",
+            "network": 3,
+            "variable": "params.payload_json.a",
+            "date_gte": "2024-04-18T23:00:00",
+            "date_lte": "2024-04-19T00:00:00",
+            "aggregation": "auto",
+            "operation": "auto"
+          }
+        },
+        "type": "scatter",
+        "layout": {
+          "margin": {
+            "l": 45,
+            "r": 25,
+            "b": 35,
+            "t": 10,
+            "pad": 4
+          },
+          "title": {
+            "text": "-",
+            "font": {
+              "family": "Courier New, monospace",
+              "size": 0,
+              "color": "#FFFFFF"
+            }
+          },
+          "xaxis": {
+            "title": {
+              "text": "-"
+            },
+            "range": [
+              "2024-04-18T23:15:56-03:00",
+              "2024-04-18T23:56:35-03:00"
+            ],
+            "type": "date"
+          },
+          "yaxis": {
+            "title": {
+              "text": "-",
+              "font": {
+                "family": "Courier New, monospace",
+                "size": 0,
+                "color": "#FFFFFF"
+              }
+            },
+            "range": [
+              93223.33333333333,
+              93256.66666666667
+            ],
+            "autorange": true,
+            "type": "linear"
+          },
+          "width": 470.4,
+          "height": 213.75
+        },
+        "options": {
+          "type": "scatter"
+        },
+        "title": "Altitude [m]"
+      }
+    ]
+  }
