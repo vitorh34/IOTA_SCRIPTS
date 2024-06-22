@@ -69,7 +69,9 @@ const char* ntpServer = "pool.ntp.org";
 const char* gmtOffset = "GMT+3";     //Replace with your GMT offset
 const char* dateTime;
 const char* clientID = "clientID gerado na plataforma IOTA";
-const char* mqttTopic = "e-mail utilizado no cadastro na plataforma IOTA";
+const char* mqttTopic = "tópico gerado na plataforma IOTA";
+const char* username = "username gerado na plataforma IOTA";
+const char* passwd = "password gerado na plataforma IOTA";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -189,10 +191,10 @@ void reconnect(){
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect(clientID)) {
+    if (client.connect(clientID, username, passwd)) {
       Serial.println("connected");
       // Once connected, publish an announcement...
-//      client.publish("outTopic", "hello world");
+//      client.publish("mqttTopic", "hello world");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
