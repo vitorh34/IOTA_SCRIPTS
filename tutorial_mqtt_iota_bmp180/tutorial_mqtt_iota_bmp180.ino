@@ -7,17 +7,17 @@
 Adafruit_BMP085 bmp;
 
 // Update these with values suitable for your network.
-const char* ssid = "Vitor";
-const char* password = "puppy301112";
+const char* ssid = "nome do seu wi-fi";
+const char* password = "senha do seu wi-fi";
 const char* mqtt_server = "iota.vimacsolucoes.com.br";
 
 const char* ntpServer = "pool.ntp.org";
 const char* gmtOffset = "GMT+3";     //Replace with your GMT offset
 const char* dateTime;
-const char* mqttTopic = "vitorh34@yahoo.com.br/7af69ddd-b059-43b8-9e83-4ddcf4b6481b";
-const char* clientID = "7af69ddd-b059-43b8-9e83-4ddcf4b6481b";
-const char* username = "vitorh34@yahoo.com.br";
-const char* passwd = "7af69ddd-b059-43b8-9e83-4ddcf4b6481b";
+const char* clientID = "clientID gerado na plataforma IOTA";
+const char* mqttTopic = "tópico gerado na plataforma IOTA";
+const char* username = "username gerado na plataforma IOTA";
+const char* passwd = "password gerado na plataforma IOTA";
 
 String datetime, mac;
 float temperature, pressure, altitude;
